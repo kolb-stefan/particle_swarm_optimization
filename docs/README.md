@@ -6,20 +6,13 @@ For the reason that github does not support equations, the tool readme2tex is us
 pip install --user readme2tex
 ```
 # Usage
-For local usage for example with Visual Studio Code, in this case relative paths are used.
+For local usage for example with Visual Studio Code, relative paths are used. This setting should also work with github.
 ```bash
 cd particle_swarm_optimization
 python -m readme2tex docs/README_BASE.md --output README.md --nocdn --svgdir docs/images/readme2tex
 ```
 
-For use on github
-
-```bash
-cd particle_swarm_optimization
-python -m readme2tex docs/README_BASE.md --output README.md --svgdir docs/images/readme2tex
-```
-
-#Notes
+# Notes
 In the case that the current directory is not an git repository it is possible to specify the options:
 * --username kolb-stefan
 * --project particle_swarm_optimization
